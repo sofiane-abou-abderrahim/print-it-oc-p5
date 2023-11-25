@@ -20,5 +20,10 @@ const slides = [
 
 const bannerArrowLeftElement = document.querySelector('#banner .arrow_left');
 const bannerArrowRightElement = document.querySelector('#banner .arrow_right');
-console.log(bannerArrowLeftElement);
-console.log(bannerArrowRightElement);
+
+bannerArrowLeftElement.addEventListener('click', function () {
+  console.log('Clic gauche !');
+});
+bannerArrowRightElement.addEventListener('click', function () {
+  alert('Clic droit !');
+});
